@@ -12,7 +12,16 @@ void chSt(bool digit, bool states[7])
 void zero(bool digit)
 {
   bool states[7];
-  if(digit)
+  
+   states[0] = 1;
+   states[1] = 1;
+   states[2] = 1;
+   states[3] = 0;
+   states[4] = 1;
+   states[5] = 1;
+   states[6] = 1;
+  
+  if(!digit) // for first digit
   {
     states[0] = 0;
     states[1] = 0;
@@ -21,16 +30,6 @@ void zero(bool digit)
     states[4] = 0;
     states[5] = 0;
     states[6] = 0;
-  }
-  if(!digit)
-  {
-    states[0] = 1;
-    states[1] = 1;
-    states[2] = 1;
-    states[3] = 0;
-    states[4] = 1;
-    states[5] = 1;
-    states[6] = 1;
   }
   chSt(digit, states);
 }
