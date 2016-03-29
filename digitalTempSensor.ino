@@ -4,7 +4,7 @@ short int firstD, secondD;
 bool numbers[10];
 
 
-
+//makes it easier to set up numbers
 void addValues(bool states[7], bool v1, bool v2, bool v3, bool v4, bool v5, bool v6, bool v7)
 {
    states[0] = v1;
@@ -16,6 +16,7 @@ void addValues(bool states[7], bool v1, bool v2, bool v3, bool v4, bool v5, bool
    states[6] = v7;
 }
 
+//gives array of premade signals for each number
 void createNumbers()
 {
   addValues(numbers[0], 1,1,1,0,1,1,1);
@@ -30,6 +31,7 @@ void createNumbers()
   addValues(numbers[9], 1,1,1,1,0,1,1);
 }
 
+//turns states into signals
 void chSt(bool digit, bool states[7])
 {
     
@@ -57,10 +59,8 @@ void loop() {
   firstD = temp / 10;
   secondD = temp % 10;
   
-  
   chSt(0, number[firstD]);
   chSt(1, number[secondD]);
-  }
   
   delay(1000);
 }
