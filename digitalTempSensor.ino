@@ -5,7 +5,7 @@ bool numbers[10];
 
 
 //makes it easier to set up numbers
-void addValues(bool states[7], bool v1, bool v2, bool v3, bool v4, bool v5, bool v6, bool v7)
+void addValues(bool &states[7], bool v1, bool v2, bool v3, bool v4, bool v5, bool v6, bool v7)
 {
    states[0] = v1;
    states[1] = v2;
