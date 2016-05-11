@@ -2,6 +2,7 @@
 thermometer with screen made from LED's
 
 This is example of simple arduino project in which you will create temperature sensor with your own segment display.
+![alt tag](https://raw.githubusercontent.com/paupav/pic/master/slika-zavrsni.png)
 
 ####Required equipment 
 - 38 LED's
@@ -22,17 +23,20 @@ This is example of simple arduino project in which you will create temperature s
 ####How to
 ! I'm assuming that you know how to put code on the arduino
 ! This project can look much nicer if you know how to solder. If you can solder you should use perforated board instead of breadboards.
+! This project will show temperature in °C
 
-
-- make sure that those seven segment displays form number 8
+- connect screen as shown on the scheme ( numbers at the picture bellow are arduino pins ) while making sure that they form number 8 
+- connect the part that forms °C to the +5 V and GND
+![alt tag](https://raw.githubusercontent.com/paupav/pic/master/shema-zavrsni.png)
 ![alt tag](https://github.com/paupav/pic/blob/master/izgled-broja.png)
 
-- connect screen as shown on the scheme ( numbers at the screen ends tells you on to which Arduino pin you should connect them)
-![alt tag](https://raw.githubusercontent.com/paupav/pic/master/shema-zavrsni.png)
 
-- upload sketch downlaoded from https://github.com/paupav/sensor-diodes to your arduino
+- upload sketch downloaded from https://github.com/paupav/sensor-diodes to your arduino
 
 ####Scheme with atmega 328-pu (adittional step)
 
 - if you wanna you can make your project smaller by uploading code on to the atmega 328-pu
 ![alt tag](https://raw.githubusercontent.com/paupav/pic/master/shema-zavrsni-cijela.png)
+
+####If you have any problem feel free to file a bug
+https://github.com/paupav/sensor-diodes/issues
