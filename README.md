@@ -2,7 +2,12 @@
 thermometer with screen made from LED's
 
 This is example of simple arduino project in which you will create temperature sensor with your own segment display.
-![alt tag](https://raw.githubusercontent.com/paupav/pic/master/slika-zavrsni.png)
+
+[![YOUTUBE VIEO](https://raw.githubusercontent.com/paupav/pic/master/slika-zavrsni.png)](https://www.youtube.com/watch?v=epclVPG0HZQ)
+
+[Click here for youtube video](https://www.youtube.com/watch?v=epclVPG0HZQ)
+
+
 
 ####Required equipment 
 - 38 LED's
